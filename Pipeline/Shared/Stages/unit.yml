@@ -6,7 +6,7 @@ stages:
   jobs:
   
   - job: Test
-    displayName: 'Unit Test'
+    displayName: 'Test'
     continueOnError: false
     steps:
 

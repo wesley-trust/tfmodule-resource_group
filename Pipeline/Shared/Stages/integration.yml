@@ -6,7 +6,7 @@ stages:
   jobs:
   
   - job: Test
-    displayName: 'Integration Test'
+    displayName: 'Test'
     continueOnError: false
     steps:
 
