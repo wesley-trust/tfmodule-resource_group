@@ -1,0 +1,18 @@
+stages:
+- stage: Unit
+  pool:
+    vmImage: 'ubuntu-latest'
+  jobs:
+  
+  - job: Test
+    displayName: 'Unit Test'
+    continueOnError: false
+    steps:
+
+    # Bootstrap steps
+    - template: ../Steps/bootstrap.yml
+    
+    # Test specific step
+    - template: ../Steps/go.yml
+      parameters:
+        arguments: '-v unit_test.go'

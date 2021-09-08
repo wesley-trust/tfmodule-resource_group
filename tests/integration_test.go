@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func IntegrationTestExample(t *testing.T) {
+func TestIntegrationExample(t *testing.T) {
 	t.Parallel()
 
 	// Enable retryable error
@@ -23,6 +23,6 @@ func IntegrationTestExample(t *testing.T) {
 	terraform.InitAndApply(t, terraformOptions)
 
 	// Run `terraform output` to get the values of output variables
-	output := terraform.Output(t, terraformOptions, "name")
+	output := terraform.Output(t, terraformOptions, "resourceGroupName")
 	assert.Equal(t, "Services-Test-UKS-01-rg", output)
 }

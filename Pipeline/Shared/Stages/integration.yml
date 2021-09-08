@@ -1,0 +1,18 @@
+stages:
+- stage: Integration
+  pool:
+    vmImage: 'ubuntu-latest'
+  jobs:
+  
+  - job: Test
+    displayName: 'Integration Test'
+    continueOnError: false
+    steps:
+
+    # Bootstrap steps
+    - template: ../Steps/bootstrap.yml
+
+    # Test specific step
+    - template: ../Steps/go.yml
+      parameters:
+        arguments: '-v integration_test.go'
