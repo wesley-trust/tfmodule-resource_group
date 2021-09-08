@@ -1,12 +1,11 @@
-# Trigger builds on commits and merges to branch
-trigger:
-  batch: true
+# Do not trigger builds on commits and merges to branch
+trigger: none
+
+# Trigger on pull requests to branch
+pr:
   branches:
     include:
     - main
-
-# Do not trigger builds on PRs
-pr: none
 
 extends:
   template: ../Shared/azure-pipelines.yml
