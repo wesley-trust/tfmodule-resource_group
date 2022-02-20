@@ -20,5 +20,5 @@ variable "service_deployment" {
 variable "service_location" {
   description = "The production resource locations to deploy"
   type        = string
-  default     = "UK South"
+  default     = "North Europe"  
 }
