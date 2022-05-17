@@ -28,7 +28,8 @@ func TestApplySingleRegion(t *testing.T) {
 	serviceDeployment := testREF + "-" + uniqueID
 
 	// Define variables
-	locations := []string{"UK South"}
+	//locations := []string{"UK South"}
+	locations := "UK South"
 
 	// Concatenate expected resource group name
 	resourceGroupName := "Services-Test-UKS-" + serviceDeployment + "-rg"
