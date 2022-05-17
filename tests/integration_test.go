@@ -16,7 +16,7 @@ func TestApplySingleRegion(t *testing.T) {
 	// Root folder where Terraform files should be (relative to the test folder)
 	rootFolder := "../"
 
-	// Path to Terraform example files being tested (relative to the root folder)
+	// Path to Terraform example files for testing (relative to the root folder)
 	terraformFolderRelativeToRoot := "./examples/"
 
 	// Copy the terraform folder to a temp folder to prevent conflicts from parallel runs
