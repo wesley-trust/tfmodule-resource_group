@@ -12,4 +12,4 @@ pr:
     - main
 
 extends:
-  template: ./Shared/azure-pipelines.yml
+  template: ./Shared/testing.yml
