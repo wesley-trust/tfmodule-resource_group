@@ -27,7 +27,8 @@ func TestPlanSingleRegion(t *testing.T) {
 	serviceDeployment := testREF + "-" + uniqueID
 
 	// Define variables
-	locations := []string{"UK South"}
+	//locations := []string{"UK South"}
+	locations := "UK South"
 
 	// Enable retryable error
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
