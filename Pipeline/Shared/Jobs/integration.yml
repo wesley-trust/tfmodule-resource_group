@@ -10,7 +10,7 @@ jobs:
     path: 's/pipeline/Shared/'
 
   # Run common steps
-  - template: ../Steps/common.yml@tfpipeline-shared
+  - template: ./Steps/common.yml@tfpipeline-shared
 
   # Run Integration steps
-  - template: ../Steps/integration.yml@tfpipeline-shared
+  - template: ./Steps/integration.yml@tfpipeline-shared
