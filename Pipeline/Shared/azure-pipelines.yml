@@ -5,7 +5,7 @@ variables:
 # Define repository
 resources:
   repositories:
-    - repository: 'tfpipeline-shared'
+    - repository: tfpipeline-shared
       type: github
       name: wesley-trust/tfpipeline-shared
       endpoint: 'wesley-trust'
