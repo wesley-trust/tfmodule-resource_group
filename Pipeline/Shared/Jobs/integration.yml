@@ -5,10 +5,8 @@ jobs:
   continueOnError: false
   steps:
 
-  # Terraform install step
-  - template: ../Steps/terraform_install.yml
+  # Run common steps
+  - template: ../Steps/common.yml
 
-  # Go steps
-  - template: ../Steps/go.yml
-    parameters:
-      arguments: '-v integration_test.go'
+  # Run Integration steps
+  - template: ../Steps/integration.yml

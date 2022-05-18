@@ -1,0 +1,4 @@
+steps:
+
+# Terraform install step
+- template: ../Tasks/terraform_install.yml

@@ -1,0 +1,12 @@
+steps:
+
+# Terraform steps
+- template: ../Tasks/terraform_init_validate.yml
+
+# Regula steps
+- template: ../Tasks/regula.yml
+
+# Go Steps
+- template: ../Tasks/go.yml
+  parameters:
+    arguments: '-v unit_test.go'
