@@ -15,7 +15,5 @@ pr:
 
 # Checkout shared pipeline
 
-
-
 extends:
   template: ./Shared/azure-pipelines.yml

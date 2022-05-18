@@ -6,4 +6,4 @@ stages:
   jobs:
   
   # Integration Test Jobs
-  - template: ../Jobs/integration.yml
+  - template: ../Jobs/unit.yml
