@@ -1,0 +1,20 @@
+jobs:
+
+- job: UnitTests
+  displayName: 'Unit Tests'
+  continueOnError: false
+  steps:
+
+  # Terraform install step
+  - template: ../Steps/terraform_install.yml
+
+  # Terraform steps
+  - template: ../Steps/terraform.yml
+
+  # Regula steps
+  - template: ../Steps/regula.yml
+  
+  # Go Steps
+  - template: ../Steps/go.yml
+    parameters:
+      arguments: '-v unit_test.go'

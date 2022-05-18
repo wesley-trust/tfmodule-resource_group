@@ -1,0 +1,14 @@
+jobs:
+
+- job: IntegrationTests
+  displayName: 'Integration Tests'
+  continueOnError: false
+  steps:
+
+  # Terraform install step
+  - template: ../Steps/terraform_install.yml
+
+  # Go steps
+  - template: ../Steps/go.yml
+    parameters:
+      arguments: '-v integration_test.go'
