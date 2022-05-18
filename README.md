@@ -2,4 +2,4 @@
 ## CI/CD Pipeline
 | Unit Tests | Integration Tests |
 |  :-------: | :---------------: |
-|            |                   |
+|[![Build Status](https://dev.azure.com/wesleytrust/Terraform/_apis/build/status/Modules/Deployments/tfmodule-resource_group?repoName=wesley-trust%2Ftfmodule-resource_group&branchName=main&stageName=Unit)](https://dev.azure.com/wesleytrust/Terraform/_build/latest?definitionId=55&repoName=wesley-trust%2Ftfmodule-resource_group&branchName=main)|[![Build Status](https://dev.azure.com/wesleytrust/Terraform/_apis/build/status/Modules/Deployments/tfmodule-resource_group?repoName=wesley-trust%2Ftfmodule-resource_group&branchName=main&stageName=Integration)](https://dev.azure.com/wesleytrust/Terraform/_build/latest?definitionId=55&repoName=wesley-trust%2Ftfmodule-resource_group&branchName=main)|
