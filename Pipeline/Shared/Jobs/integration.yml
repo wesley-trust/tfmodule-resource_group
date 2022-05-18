@@ -5,6 +5,10 @@ jobs:
   continueOnError: false
   steps:
 
+  # Checkout shared steps and tasks
+  - checkout: 'tfpipeline-shared'
+    path: 's/pipeline/Shared/'
+
   # Run common steps
   - template: ../Steps/common.yml
 

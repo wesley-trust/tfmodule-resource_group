@@ -1,6 +1,0 @@
-steps:
-
-# Go steps
-- template: ../Tasks/go.yml
-  parameters:
-    arguments: '-v integration_test.go'
